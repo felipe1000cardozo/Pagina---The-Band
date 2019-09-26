@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.9.0-web/css/all.css">   
+</head>
+<body>
+    <div id="buy-ticket">
+        <div id="buy-container">   
+            <div id="buy-container-header">
+                <h1><i class="fas fa-suitcase"></i>Tickets</h1>
+                <button onclick="hideTicketShop()">X</button>
+            </div>
+            <div id="buy-conteiner-inputs">
+                <p><i class="fas fa-shopping-cart"></i>Tickets, $15 per person</p>
+                <input type="text" placeholder="How many?">
+                <p><i class="fas fa-user"></i>Send To</p>
+                <input type="text" placeholder="Enter email">
+                <button>PAY <i class="fas fa-check"> </i> </button>
+                <button id="close" onclick="hideTicketShop()" >Close  <i class="fas fa-times"></i></button>
+                <p>Need <a href="">Help?</a> </p>
+            </div>
+        </div>
+    </div>
+    <ul class="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#theband">BAND</a></li>
+        <li><a href="#tourdates">TOUR</a></li>
+        <li><a href="#contac">CONTACT</a></li>
+        <li id="display">
+            <a href="#">MORE<i class="fas fa-caret-down"></i></a>
+            <div id="dropdown">
+                <a href="#">Merchandise</a>
+                <a href="#">Extra</a>
+                <a href="#social">Media</a>
+            </div>
+        </li>
+        <li class="fright search">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </li>
+    </ul>
+    <div class="clear"></div>
+    <div id="dvslider">
+        <img src="" alt="" id="imgSlider">
+        <div id="sub"></div>
+    </div>
+    <div class="clear"></div>
+    <div  id="theband" class="center">
+        <h2>THE BAND</h2>
+        <h4>We love music</h4>
+        <p>
+            We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.      
+        </p>
+        <div id="members">
+            <img class="member" src="img/bandmember.jpg" alt="">
+            <img class="member" src="img/bandmember.jpg" alt="">
+            <img class="member" src="img/bandmember.jpg" alt="">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="full-widht-black">
+        <div id="tourdates" class="center">
+            <h2>TOUR DATES</h2>
+            <h4>Remember to book your tickets!</h4>
+            <div id="tickets">
+                <ul>
+                    <li>September <span class="sold-out">Sold out</span></li>
+                    <li>October <span class="sold-out">Sold out</span></li>
+                    <li>November<span class="avalible">3</span></li>
+                </ul>
+            </div>
+            <div id="cityes">
+                <div class="city">
+                    <img src="img/newyork.jpg" alt="">
+                    <div>
+                        <strong>New York</strong> 
+                        <p>Fri 27 Nov 2016</p>
+                        <p style="opacity: 1; font-style: normal">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button on  onclick="showTicketShop()">Buy Tickets</button>
+                    </div>     
+                </div>
+                <div class="city"><img src="img/paris.jpg" alt="">
+                    <div>
+                        <strong>Paris</strong> 
+                        <p>Sat 28 Nov 2016</p>
+                        <p style="opacity: 1; font-style: normal">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button on  onclick="showTicketShop()">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="city"><img src="img/sanfran.jpg" alt="">
+                    <div>
+                        <strong>San Francisco</strong> 
+                        <p>Sun 29 Nov 2016</p>
+                        <p style="opacity: 1; font-style: normal">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button on  onclick="showTicketShop()">Buy Tickets</button>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center" id="contac">
+        <h2>
+            CONTACT
+        </h2>
+        <h4>
+            Fan? Drop a note!
+        </h4>
+        <div id="contact">
+            <div id="info">
+                <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+            </div>
+            <div id="input-note">
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="text" placeholder="Email">
+                <input id="message" type="text" placeholder="Message">
+                <button id="send" >SEND</button>
+            </div>
+        </div>    
+    </div>
+    <div id="map">
+        <img src="img/map.jpg" alt="">
+    </div>
+    <footer class="center" id="social">
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-snapchat-square fa-2x"></i>
+        <i class="fab fa-pinterest-p fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-linkedin-in fa-2x"></i>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p> 
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
